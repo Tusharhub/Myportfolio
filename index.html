@@ -1,316 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Kalam Dream World | Staffing, IT Services, Workforce Solutions &amp; Training</title>
+  <meta name="description" content="Kalam Dream World provides Non-IT staffing for healthcare, banking, finance and insurance; IT services including SAP, Oracle, Temenos, TIBCO, data, cloud, apps and testing; workforce solutions; and training and placement.">
+  <meta name="theme-color" content="#151B4D">
+  <link rel="canonical" href="https://www.kalamdreamworld.com/">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kalam Dream World">
+  <meta property="og:title" content="Kalam Dream World | Staffing, IT Services &amp; Training">
+  <meta property="og:description" content="Hiring, technology and training for businesses and job seekers across healthcare, banking, finance, insurance and IT.">
+  <meta property="og:url" content="https://www.kalamdreamworld.com/">
 
-  <title>Freelancer - Start Bootstrap Theme</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 
-  <!-- Custom fonts for this theme -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Hind:wght@400;500;600&display=swap">
 
-  <!-- Theme CSS -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+  <!-- Bootstrap 5.3 + Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
+  <!-- Site styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>document.documentElement.className += ' js';</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kalam Dream World",
+    "url": "https://www.kalamdreamworld.com/",
+    "email": "kalamdreamworld777@gmail.com",
+    "telephone": "+91-93611-99536",
+    "description": "Non-IT staffing for healthcare, banking, finance and insurance; IT services including SAP, Oracle, Temenos banking, TIBCO, middleware, enterprise data, big data, cloud, digital apps, testing and managed services; workforce solutions; and training and placement."
+  }
+  </script>
 </head>
+<body>
 
-<body id="page-top" background="img/1.jpg" 	 >
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Navigation -->
-  <nav class="fixed-top navbar navbar-expand-lg text-uppercase" id="mainNav">
+<!-- Shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="kdw-mark" viewBox="0 0 48 48">
+      <path d="M13 10v28M13 26L27 12M18 21l13 17" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M37 4Q38.1 12.9 47 14Q38.1 15.1 37 24Q35.9 15.1 27 14Q35.9 12.9 37 4Z" fill="#F2A93B"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav" aria-label="Main">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
+      <a class="navbar-brand brand" href="#home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#kdw-mark"/></svg>
+        <span>Kalam Dream World</span>
+      </a>
+
+      <button class="nav-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle js-services-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#non-it">
+                  <span class="dd-dot dd-nonit" aria-hidden="true"></span>
+                  <span><strong>Non-IT services</strong><small>Healthcare, banking, finance, insurance</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#it-services">
+                  <span class="dd-dot dd-it" aria-hidden="true"></span>
+                  <span><strong>IT services</strong><small>SAP, Oracle, cloud, data, apps and more</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#workforce">
+                  <span class="dd-dot dd-work" aria-hidden="true"></span>
+                  <span><strong>Workforce &amp; training</strong><small>Workforce solutions, training &amp; placement</small></span>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLSe4aSeyVaNUFLuub0O_Oprymf5iyfw3NNdEOBuNp9nj9ILXnw/viewform?usp=pp_url">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-marigold" href="#contact">Get in touch</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Masthead -->
-<header class="masthead text-center text-white">
-    <div class="container d-flex align-items-center flex-column">
+</header>
 
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/my.jgp" alt="">
+<main id="main">
 
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Tushar Sharma</h1>
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <canvas class="hero-stars" id="heroStars" aria-hidden="true"></canvas>
+    <div class="hero-world" aria-hidden="true"></div>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Web Designer- Digital Marketer - Data Analytics</p>
-
-    </div>
-  </header>
-  <!-- Portfolio Section -->
- <section class="page-section portfolio" id="portfolio">
     <div class="container">
-
-      <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Projects</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+      <div class="row align-items-center gy-4 gx-lg-5">
+        <div class="col-lg-6">
+          <h1 class="seq" style="--d:.05s">Every dream needs the right direction.</h1>
+          <p class="hero-lead seq" style="--d:.2s">We help businesses in healthcare, banking, finance, insurance and IT hire the right people and build better technology. And we train job seekers for the roles they want.</p>
+          <div class="hero-actions seq" style="--d:.35s">
+            <a href="#contact" class="btn btn-marigold btn-lg" data-role="employer">Hire talent</a>
+            <a href="#contact" class="btn btn-line-light btn-lg" data-role="candidate" data-service-to="training">Find a job</a>
+          </div>
+          <p class="hero-contact seq" style="--d:.5s">
+            <i class="bi bi-telephone" aria-hidden="true"></i>
+            Call or WhatsApp <a href="tel:+919361199536">+91 93611 99536</a>
+          </p>
         </div>
-        <div class="divider-custom-line"></div>
+
+        <div class="col-lg-6">
+          <div class="constellation-wrap">
+            <svg class="constellation" viewBox="0 0 600 560" role="group" aria-label="Our services">
+              <defs>
+                <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0" stop-color="#F2A93B" stop-opacity=".55"/>
+                  <stop offset="1" stop-color="#F2A93B" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- connecting lines -->
+              <g aria-hidden="true">
+                <!-- from the centre star -->
+                <path class="c-line" pathLength="1" style="--d:.45s" d="M300 290L108 300"/>
+                <path class="c-line" pathLength="1" style="--d:.45s" d="M300 290L404 168"/>
+                <path class="c-line" pathLength="1" style="--d:.45s" d="M300 290L518 378"/>
+                <!-- Non-IT services -->
+                <path class="c-line" pathLength="1" style="--d:.85s" d="M108 300L130 140"/>
+                <path class="c-line" pathLength="1" style="--d:.85s" d="M108 300L150 440"/>
+                <path class="c-line" pathLength="1" style="--d:1.2s" d="M150 440L290 488"/>
+                <!-- Workforce & training -->
+                <path class="c-line" pathLength="1" style="--d:.85s" d="M518 378L416 470"/>
+                <path class="c-line" pathLength="1" style="--d:1.2s" d="M416 470L290 488"/>
+                <!-- IT services -->
+                <path class="c-line" pathLength="1" style="--d:.8s" d="M404 168L446 116"/>
+                <path class="c-line" pathLength="1" style="--d:.8s" d="M404 168L452 200"/>
+                <path class="c-line" pathLength="1" style="--d:1.05s" d="M446 116L380 70"/>
+                <path class="c-line" pathLength="1" style="--d:1.05s" d="M446 116L478 70"/>
+                <path class="c-line" pathLength="1" style="--d:1.05s" d="M452 200L514 222"/>
+                <path class="c-line" pathLength="1" style="--d:1.05s" d="M452 200L418 244"/>
+                <path class="c-line" pathLength="1" style="--d:1.3s" d="M380 70L428 44"/>
+                <path class="c-line" pathLength="1" style="--d:1.3s" d="M428 44L478 70"/>
+                <path class="c-line" pathLength="1" style="--d:1.3s" d="M478 70L532 46"/>
+                <path class="c-line" pathLength="1" style="--d:1.3s" d="M514 222L566 180"/>
+                <path class="c-line" pathLength="1" style="--d:1.55s" d="M532 46L574 92"/>
+                <path class="c-line" pathLength="1" style="--d:1.55s" d="M566 180L522 132"/>
+                <path class="c-line" pathLength="1" style="--d:1.75s" d="M574 92L522 132"/>
+              </g>
+
+              <!-- centre star -->
+              <g class="c-core" aria-hidden="true">
+                <circle class="core-glow" cx="300" cy="290" r="78" fill="url(#coreGlow)"/>
+                <path class="core-star" d="M300 262Q303.4 286.6 328 290Q303.4 293.4 300 318Q296.6 293.4 272 290Q296.6 286.6 300 262Z"/>
+                <text class="core-label" x="300" y="348" text-anchor="middle">Kalam Dream World</text>
+              </g>
+
+              <!-- Non-IT and workforce stars (labelled) -->
+              <g class="c-node" data-cat="nonit" data-service="banking" tabindex="0" role="button" aria-label="Banking: see details" style="--d:.75s">
+                <circle class="c-hit" cx="108" cy="300" r="30"/>
+                <circle class="c-halo" cx="108" cy="300" r="15"/>
+                <circle class="c-dot" cx="108" cy="300" r="6"/>
+                <text class="c-label" x="88" y="306" text-anchor="end">Banking</text>
+              </g>
+              <g class="c-node" data-cat="nonit" data-service="healthcare" tabindex="0" role="button" aria-label="Healthcare: see details" style="--d:1.05s">
+                <circle class="c-hit" cx="130" cy="140" r="30"/>
+                <circle class="c-halo" cx="130" cy="140" r="15"/>
+                <circle class="c-dot" cx="130" cy="140" r="6"/>
+                <text class="c-label" x="130" y="112" text-anchor="middle">Healthcare</text>
+              </g>
+              <g class="c-node" data-cat="nonit" data-service="finance" tabindex="0" role="button" aria-label="Finance: see details" style="--d:1.05s">
+                <circle class="c-hit" cx="150" cy="440" r="30"/>
+                <circle class="c-halo" cx="150" cy="440" r="15"/>
+                <circle class="c-dot" cx="150" cy="440" r="6"/>
+                <text class="c-label" x="140" y="478" text-anchor="middle">Finance</text>
+              </g>
+              <g class="c-node" data-cat="nonit" data-service="insurance" tabindex="0" role="button" aria-label="Insurance: see details" style="--d:1.4s">
+                <circle class="c-hit" cx="290" cy="488" r="30"/>
+                <circle class="c-halo" cx="290" cy="488" r="15"/>
+                <circle class="c-dot" cx="290" cy="488" r="6"/>
+                <text class="c-label" x="278" y="524" text-anchor="end">Insurance</text>
+              </g>
+              <g class="c-node" data-cat="work" data-service="workforce" tabindex="0" role="button" aria-label="Workforce solutions: see details" style="--d:.75s">
+                <circle class="c-hit" cx="518" cy="378" r="30"/>
+                <circle class="c-halo" cx="518" cy="378" r="15"/>
+                <circle class="c-dot" cx="518" cy="378" r="6"/>
+                <text class="c-label" x="518" y="326" text-anchor="middle">Workforce<tspan x="518" dy="1.15em">solutions</tspan></text>
+              </g>
+              <g class="c-node" data-cat="work" data-service="training" tabindex="0" role="button" aria-label="Training and placement: see details" style="--d:1.05s">
+                <circle class="c-hit" cx="416" cy="470" r="30"/>
+                <circle class="c-halo" cx="416" cy="470" r="15"/>
+                <circle class="c-dot" cx="416" cy="470" r="6"/>
+                <text class="c-label" x="416" y="502" text-anchor="middle">Training &amp;<tspan x="416" dy="1.15em">placement</tspan></text>
+              </g>
+
+              <!-- IT services: 12 smaller stars, name shows on hover or focus -->
+              <text class="c-group-label" x="478" y="20" text-anchor="middle" style="--d:1.2s" aria-hidden="true">IT services</text>
+              <g class="c-node c-sm" data-cat="it" data-service="digitalapps" data-name="Digital apps" tabindex="0" role="button" aria-label="Digital apps: see details" style="--d:.75s">
+                <circle class="c-hit" cx="404" cy="168" r="22"/>
+                <circle class="c-halo" cx="404" cy="168" r="11"/>
+                <circle class="c-dot" cx="404" cy="168" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="scm" data-name="Supply chain management" tabindex="0" role="button" aria-label="Supply chain management: see details" style="--d:1s">
+                <circle class="c-hit" cx="446" cy="116" r="22"/>
+                <circle class="c-halo" cx="446" cy="116" r="11"/>
+                <circle class="c-dot" cx="446" cy="116" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="testing" data-name="Testing" tabindex="0" role="button" aria-label="Testing: see details" style="--d:1s">
+                <circle class="c-hit" cx="452" cy="200" r="22"/>
+                <circle class="c-halo" cx="452" cy="200" r="11"/>
+                <circle class="c-dot" cx="452" cy="200" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="sap" data-name="SAP" tabindex="0" role="button" aria-label="SAP: see details" style="--d:1.25s">
+                <circle class="c-hit" cx="380" cy="70" r="22"/>
+                <circle class="c-halo" cx="380" cy="70" r="11"/>
+                <circle class="c-dot" cx="380" cy="70" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="temenos" data-name="Temenos banking" tabindex="0" role="button" aria-label="Temenos banking: see details" style="--d:1.25s">
+                <circle class="c-hit" cx="478" cy="70" r="22"/>
+                <circle class="c-halo" cx="478" cy="70" r="11"/>
+                <circle class="c-dot" cx="478" cy="70" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="cloud" data-name="Cloud" tabindex="0" role="button" aria-label="Cloud: see details" style="--d:1.25s">
+                <circle class="c-hit" cx="514" cy="222" r="22"/>
+                <circle class="c-halo" cx="514" cy="222" r="11"/>
+                <circle class="c-dot" cx="514" cy="222" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="managed" data-name="Managed services" tabindex="0" role="button" aria-label="Managed services: see details" style="--d:1.25s">
+                <circle class="c-hit" cx="418" cy="244" r="22"/>
+                <circle class="c-halo" cx="418" cy="244" r="11"/>
+                <circle class="c-dot" cx="418" cy="244" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="oracle" data-name="Oracle" tabindex="0" role="button" aria-label="Oracle: see details" style="--d:1.5s">
+                <circle class="c-hit" cx="428" cy="44" r="22"/>
+                <circle class="c-halo" cx="428" cy="44" r="11"/>
+                <circle class="c-dot" cx="428" cy="44" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="tibco" data-name="TIBCO" tabindex="0" role="button" aria-label="TIBCO: see details" style="--d:1.5s">
+                <circle class="c-hit" cx="532" cy="46" r="22"/>
+                <circle class="c-halo" cx="532" cy="46" r="11"/>
+                <circle class="c-dot" cx="532" cy="46" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="bigdata" data-name="Big data &amp; analytics" tabindex="0" role="button" aria-label="Big data and analytics: see details" style="--d:1.5s">
+                <circle class="c-hit" cx="566" cy="180" r="22"/>
+                <circle class="c-halo" cx="566" cy="180" r="11"/>
+                <circle class="c-dot" cx="566" cy="180" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="middleware" data-name="Middleware &amp; integration" tabindex="0" role="button" aria-label="Middleware and integration: see details" style="--d:1.7s">
+                <circle class="c-hit" cx="574" cy="92" r="22"/>
+                <circle class="c-halo" cx="574" cy="92" r="11"/>
+                <circle class="c-dot" cx="574" cy="92" r="4.5"/>
+              </g>
+              <g class="c-node c-sm" data-cat="it" data-service="enterprisedata" data-name="Enterprise data" tabindex="0" role="button" aria-label="Enterprise data: see details" style="--d:1.7s">
+                <circle class="c-hit" cx="522" cy="132" r="22"/>
+                <circle class="c-halo" cx="522" cy="132" r="11"/>
+                <circle class="c-dot" cx="522" cy="132" r="4.5"/>
+              </g>
+
+              <!-- hover label for IT stars -->
+              <g class="c-tip" aria-hidden="true">
+                <rect class="c-tip-bg" rx="8" ry="8"/>
+                <text class="c-tip-text" text-anchor="middle"></text>
+              </g>
+            </svg>
+            <p class="constellation-hint seq" style="--d:1.6s">Select a star to see what each service covers.</p>
+          </div>
+        </div>
       </div>
-
-      <!-- Portfolio Grid Items -->
-      <div class="row">
-
-        <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class= "portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-           <a href="https://www.slideshare.net/tusharsharma569/red-hat-linux-227089038"><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-               </div>
-            </div>
-</a>
-           <img class="img-fluid" src="img/ppt1.jpg" alt="" style="
-    
-">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-           <a href="https://www.slideshare.net/tusharsharma569/ted-codd"><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-           <img class="img-fluid" src="img/ppt2.jpg" alt="" style="
-    
-">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <a href="https://www.slideshare.net/tusharsharma569/intel-227085448"><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-</a>
-           <img class="img-fluid" src="img/ppt3.jpg" alt="" style="
-   
-">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-            <img class="img-fluid" src="img/sing.jpg" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-            <img class="img-fluid" src="img/blinding.jpg" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-            <img class="img-fluid" src="img/climping.jpg" alt="">
-          </div>
-        </div>
-		        <!-- Portfolio Item 7 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-            <img class="img-fluid" src="img/wcsc.jpg" alt="">
-          </div>
-        </div>
-		        <!-- Portfolio Item 8 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-            <img class="img-fluid" src="img/flybirds.gif" alt="">
-          </div>
-        </div>
-		        <!-- Portfolio Item 9 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                
-              </div>
-            </div>
-            <img class="img-fluid" src="img/b.jpg" alt="">
-          </div>
-        </div>
-
-      </div>
-
-      <!-- /.row -->
-
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="mb-0 page-section text-white" id="about">
-    <div class="container">
-
-      <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- About Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">I am a good student pursuing one year full time certification course in Digital Marketing and Data Analytic from World Class Skill Centre </p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">I have good knowledge in programming language like C++,html,css and i also comfortable with WordPress.com </p>
-        </div>
-      </div>
-
-  
-  </section>
-
-
-
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class=" text-center text-white">
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about" aria-labelledby="about-title">
     <div class="container">
-      <div class="row">
+      <h2 class="visually-hidden" id="about-title">About Kalam Dream World</h2>
+      <p class="statement reveal">Kalam Dream World is a staffing, technology and training company. We help hospitals, banks, finance firms and insurers hire dependable people, deliver IT services from SAP and Oracle to cloud, data and testing, and train job seekers until they are ready for work.</p>
 
-        <!-- Footer Location -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">World Class Skill Centre, Dwarka
-            <br>New Delhi-110077</p>
+      <div class="row g-4">
+        <div class="col-lg-6 reveal">
+          <div class="audience audience-employer">
+            <h3>For employers</h3>
+            <p class="tagline">Hire people who are ready to work, or bring in a team to build your software.</p>
+            <ul class="tick-list">
+              <li>Permanent, contract and bulk hiring</li>
+              <li>Screened candidates for Non-IT and IT roles</li>
+              <li>IT services across SAP, Oracle, cloud, data, apps and testing</li>
+            </ul>
+            <a href="#contact" class="btn btn-ink" data-role="employer">Hire talent</a>
+          </div>
         </div>
-
-        <!-- Footer Social Icons -->
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/wcscdwtushar">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/tusharganshyala/">
-            <i class="fab fa-fw fa-instagram"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/tushar-sharma-40312b194/">
-            <i class="fab fa-fw fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UC7quVzXRvu3c9c137cRaFAw">
-            <i class="fab fa-fw fa-youtube"></i>
-          </a>
+        <div class="col-lg-6 reveal" data-delay=".12">
+          <div class="audience audience-seeker">
+            <svg class="mini-constellation" viewBox="0 0 120 80" aria-hidden="true">
+              <path d="M10 60L48 30L84 44L106 14" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1"/>
+              <circle cx="10" cy="60" r="2.2" fill="#fff"/>
+              <circle cx="48" cy="30" r="2.6" fill="#fff"/>
+              <circle cx="84" cy="44" r="2" fill="#fff"/>
+              <path d="M110 4Q111 11 118 12Q111 13 110 20Q109 13 102 12Q109 11 110 4Z" fill="#F2A93B"/>
+            </svg>
+            <h3>For job seekers</h3>
+            <p class="tagline">Get trained for the role you want, then get help finding it.</p>
+            <ul class="tick-list">
+              <li>Training for healthcare, banking, finance, insurance and IT roles</li>
+              <li>Communication, resume and interview preparation</li>
+              <li>Placement assistance after training</li>
+            </ul>
+            <a href="#contact" class="btn btn-marigold" data-role="candidate" data-service-to="training">Register as a candidate</a>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Footer About Text -->
+  <!-- ================= SERVICES ================= -->
+  <section class="section section-paper" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="row section-head align-items-end gy-3">
+        <div class="col-lg-6"><h2 id="services-title">Our services</h2></div>
+        <div class="col-lg-6"><p class="section-intro">Staffing for four key industries, IT services from enterprise platforms to cloud and testing, and training that gets people job-ready.</p></div>
+      </div>
+
+      <!-- Non-IT -->
+      <div class="svc-group cat-nonit reveal" id="non-it">
+        <div class="row gy-4 gx-lg-5">
+          <div class="col-lg-4 svc-meta">
+            <h3>Non-IT services</h3>
+            <p>Dependable, screened staff for the industries that keep everyday life running.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="svc-panel">
+              <button type="button" class="svc-row" data-service="healthcare" aria-haspopup="dialog">
+                <span class="svc-ico" aria-hidden="true"><i class="bi bi-heart-pulse"></i></span>
+                <span class="svc-text"><span class="svc-name">Healthcare</span><span class="svc-desc">Clinical and non-clinical staff for hospitals, clinics, labs and pharma companies.</span></span>
+                <span class="svc-more">Details <i class="bi bi-plus-lg" aria-hidden="true"></i></span>
+              </button>
+              <button type="button" class="svc-row" data-service="banking" aria-haspopup="dialog">
+                <span class="svc-ico" aria-hidden="true"><i class="bi bi-bank"></i></span>
+                <span class="svc-text"><span class="svc-name">Banking</span><span class="svc-desc">Branch, sales, credit and back-office talent for banks and NBFCs.</span></span>
+                <span class="svc-more">Details <i class="bi bi-plus-lg" aria-hidden="true"></i></span>
+              </button>
+              <button type="button" class="svc-row" data-service="finance" aria-haspopup="dialog">
+                <span class="svc-ico" aria-hidden="true"><i class="bi bi-graph-up-arrow"></i></span>
+                <span class="svc-text"><span class="svc-name">Finance</span><span class="svc-desc">Accountants, analysts, payroll and compliance professionals.</span></span>
+                <span class="svc-more">Details <i class="bi bi-plus-lg" aria-hidden="true"></i></span>
+              </button>
+              <button type="button" class="svc-row" data-service="insurance" aria-haspopup="dialog">
+                <span class="svc-ico" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
+                <span class="svc-text"><span class="svc-name">Insurance</span><span class="svc-desc">Advisors, sales teams, underwriting and claims support.</span></span>
+                <span class="svc-more">Details <i class="bi bi-plus-lg" aria-hidden="true"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IT -->
+      <div class="svc-group cat-it reveal" id="it-services">
+        <div class="row gy-4 gx-lg-5">
+          <div class="col-lg-4 svc-meta">
+            <h3>IT services</h3>
+            <p>IT consulting and software development across enterprise platforms, integration, data, cloud and applications.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="svc-stack">
+                  <div class="svc-panel">
+                    <h4 class="cluster-title">Enterprise platforms</h4>
+                    <button type="button" class="svc-row svc-row-sm" data-service="sap" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-boxes"></i></span>
+                      <span class="svc-text"><span class="svc-name">SAP</span><span class="svc-desc">Implementation, integration and support for SAP.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="oracle" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-database-gear"></i></span>
+                      <span class="svc-text"><span class="svc-name">Oracle</span><span class="svc-desc">Oracle applications and database services.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="temenos" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-bank2"></i></span>
+                      <span class="svc-text"><span class="svc-name">Temenos banking</span><span class="svc-desc">Core banking implementation and support.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="scm" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-truck"></i></span>
+                      <span class="svc-text"><span class="svc-name">Supply chain management</span><span class="svc-desc">Visibility across purchasing, stock and delivery.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                  </div>
+                  <div class="svc-panel">
+                    <h4 class="cluster-title">Integration</h4>
+                    <button type="button" class="svc-row svc-row-sm" data-service="tibco" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-bezier2"></i></span>
+                      <span class="svc-text"><span class="svc-name">TIBCO</span><span class="svc-desc">Integration and messaging on TIBCO.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="middleware" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-diagram-3"></i></span>
+                      <span class="svc-text"><span class="svc-name">Middleware &amp; integration</span><span class="svc-desc">Connect apps, databases and platforms.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="svc-stack">
+                  <div class="svc-panel">
+                    <h4 class="cluster-title">Data &amp; cloud</h4>
+                    <button type="button" class="svc-row svc-row-sm" data-service="enterprisedata" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-database"></i></span>
+                      <span class="svc-text"><span class="svc-name">Enterprise data</span><span class="svc-desc">One trusted, well-governed data foundation.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="bigdata" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-bar-chart-line"></i></span>
+                      <span class="svc-text"><span class="svc-name">Big data &amp; analytics</span><span class="svc-desc">Dashboards and insight from large data sets.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="cloud" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-cloud-check"></i></span>
+                      <span class="svc-text"><span class="svc-name">Cloud</span><span class="svc-desc">Migration, security and cloud management.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                  </div>
+                  <div class="svc-panel">
+                    <h4 class="cluster-title">Apps &amp; support</h4>
+                    <button type="button" class="svc-row svc-row-sm" data-service="digitalapps" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-phone"></i></span>
+                      <span class="svc-text"><span class="svc-name">Digital apps</span><span class="svc-desc">Web and mobile apps built to grow with you.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="testing" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-bug"></i></span>
+                      <span class="svc-text"><span class="svc-name">Testing</span><span class="svc-desc">Functional, automated and performance testing.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                    <button type="button" class="svc-row svc-row-sm" data-service="managed" aria-haspopup="dialog">
+                      <span class="svc-ico" aria-hidden="true"><i class="bi bi-headset"></i></span>
+                      <span class="svc-text"><span class="svc-name">Managed services</span><span class="svc-desc">Monitoring, maintenance and support.</span></span>
+                      <span class="svc-plus" aria-hidden="true"><i class="bi bi-plus-lg"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workforce & training -->
+      <div class="svc-group cat-work reveal" id="workforce">
+        <div class="row gy-4 gx-lg-5">
+          <div class="col-lg-4 svc-meta">
+            <h3>Workforce &amp; training</h3>
+            <p>Flexible hiring for employers, and job-ready training for candidates.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="svc-panel">
+              <button type="button" class="svc-row" data-service="workforce" aria-haspopup="dialog">
+                <span class="svc-ico" aria-hidden="true"><i class="bi bi-people"></i></span>
+                <span class="svc-text"><span class="svc-name">Workforce solutions</span><span class="svc-desc">Permanent, contract and bulk hiring, with payroll and compliance.</span></span>
+                <span class="svc-more">Details <i class="bi bi-plus-lg" aria-hidden="true"></i></span>
+              </button>
+              <button type="button" class="svc-row" data-service="training" aria-haspopup="dialog">
+                <span class="svc-ico" aria-hidden="true"><i class="bi bi-mortarboard"></i></span>
+                <span class="svc-text"><span class="svc-name">Training &amp; placement</span><span class="svc-desc">Skill training, interview preparation and placement assistance.</span></span>
+                <span class="svc-more">Details <i class="bi bi-plus-lg" aria-hidden="true"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="section how" id="how" aria-labelledby="how-title">
+    <div class="container">
+      <div class="row section-head align-items-end gy-3">
+        <div class="col-lg-6"><h2 id="how-title">How it works</h2></div>
+        <div class="col-lg-6"><p class="section-intro">Pick your path to see what happens after you get in touch.</p></div>
+      </div>
+
+      <div class="seg" role="tablist" aria-label="Choose your path">
+        <span class="seg-indicator" aria-hidden="true"></span>
+        <button type="button" class="seg-btn" role="tab" id="tab-hire" aria-selected="true" aria-controls="flow-hire" data-flow="hire">I'm hiring</button>
+        <button type="button" class="seg-btn" role="tab" id="tab-job" aria-selected="false" aria-controls="flow-job" data-flow="job" tabindex="-1">I'm looking for a job</button>
+      </div>
+
+      <div class="flow" id="flow-hire" role="tabpanel" aria-labelledby="tab-hire">
+        <ol class="steps" style="--n:4">
+          <li class="step" style="--i:0"><span class="step-dot">1</span><h3>Share your requirement</h3><p>Tell us the role, number of openings, location and when you need people to start.</p></li>
+          <li class="step" style="--i:1"><span class="step-dot">2</span><h3>We source and screen</h3><p>We shortlist candidates and check their skills, experience and fit for your team.</p></li>
+          <li class="step" style="--i:2"><span class="step-dot">3</span><h3>You interview</h3><p>Meet the shortlisted candidates and choose the people you want to hire.</p></li>
+          <li class="step" style="--i:3"><span class="step-dot">4</span><h3>Joining and support</h3><p>We coordinate offers and joining, and stay in touch after people start.</p></li>
+        </ol>
+        <a href="#contact" class="btn btn-ink" data-role="employer">Share a requirement</a>
+      </div>
+
+      <div class="flow" id="flow-job" role="tabpanel" aria-labelledby="tab-job" hidden>
+        <ol class="steps" style="--n:5">
+          <li class="step" style="--i:0"><span class="step-dot">1</span><h3>Register</h3><p>Share your education, experience and the kind of job you want.</p></li>
+          <li class="step" style="--i:1"><span class="step-dot">2</span><h3>Skill assessment</h3><p>We understand your strengths and what you need to work on.</p></li>
+          <li class="step" style="--i:2"><span class="step-dot">3</span><h3>Training</h3><p>Learn the domain, technical and communication skills your target role needs.</p></li>
+          <li class="step" style="--i:3"><span class="step-dot">4</span><h3>Interview preparation</h3><p>Build your resume and practise with mock interviews.</p></li>
+          <li class="step" style="--i:4"><span class="step-dot">5</span><h3>Placement support</h3><p>We help you apply to suitable openings and prepare for each interview.</p></li>
+        </ol>
+        <a href="#contact" class="btn btn-ink" data-role="candidate" data-service-to="training">Register as a candidate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section class="section section-night" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="row gy-4 gx-lg-5">
         <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">About E-commmerce</h4>
-          <p class="lead mb-0">Ecommerce, also known as electronic commerce or internet commerce, refers to the buying and selling of goods or services using the internet, and the transfer of money and data to execute these transactions.</p>
+          <h2 id="why-title">Why work with us</h2>
+          <p class="section-intro mt-3">One team for hiring, technology and training, so you deal with fewer vendors and get clearer answers.</p>
         </div>
-
+        <div class="col-lg-8">
+          <div class="why-grid reveal">
+            <div class="why-item">
+              <h3>IT and Non-IT under one roof</h3>
+              <p>Hire for a hospital front desk or a software team through the same partner.</p>
+            </div>
+            <div class="why-item">
+              <h3>We know your industry</h3>
+              <p>We understand the roles, compliance and pace of healthcare, banking, finance and insurance.</p>
+            </div>
+            <div class="why-item">
+              <h3>Candidates who are ready</h3>
+              <p>Training before placement means candidates arrive prepared for the job, not just the interview.</p>
+            </div>
+            <div class="why-item">
+              <h3>Clear updates at every step</h3>
+              <p>You always know where your hiring, project or application stands.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-
-  <!-- Copyright Section -->
-  <section class="py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
     </div>
   </section>
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="row gy-4 gx-lg-5">
+        <div class="col-lg-4">
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p class="section-intro mt-3">Can't find your answer? Call or WhatsApp us on <a href="tel:+919361199536">+91 93611 99536</a>.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="accordion faq-list reveal" id="faqList">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">What does Kalam Dream World do?</button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqList">
+                <div class="accordion-body">We provide Non-IT staffing for healthcare, banking, finance and insurance; IT services such as SAP, Oracle, Temenos banking, integration, data, cloud, digital apps, testing and managed services; workforce solutions for employers; and training and placement support for job seekers.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Do you hire for both IT and Non-IT roles?</button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqList">
+                <div class="accordion-body">Yes. We recruit for Non-IT roles such as front office, patient-care support, banking operations, accounts and insurance sales, and for IT roles such as SAP and Oracle consultants, developers, testers and support engineers.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">How can my company hire through you?</button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqList">
+                <div class="accordion-body">Send your requirement using the form below, on WhatsApp or by email. We confirm the role details, share screened profiles, arrange interviews and support you until the candidates join.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">I'm a fresher. Can I register?</button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqList">
+                <div class="accordion-body">Yes. Freshers and experienced professionals can both register. We assess your skills, suggest the right training and help you prepare for interviews.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">Which IT platforms do you work with?</button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqList">
+                <div class="accordion-body">We work with SAP, Oracle, Temenos and TIBCO, along with middleware and integration tools, enterprise data and analytics platforms, and public, private and hybrid cloud. We also build custom web and mobile apps, and test and support the systems you already run.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section section-paper" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="row gy-5 gx-lg-5">
+        <div class="col-lg-5">
+          <h2 id="contact-title">Get in touch</h2>
+          <p class="section-intro mt-3">Hiring, looking for a job or planning a software project? Send us a message and our team will get back to you.</p>
+
+          <ul class="contact-lines">
+            <li>
+              <a href="tel:+919361199536">
+                <i class="bi bi-telephone" aria-hidden="true"></i>
+                <span><span class="cl-label">Call or WhatsApp</span><span class="cl-value">+91 93611 99536</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:kalamdreamworld777@gmail.com">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <span><span class="cl-label">Email</span><span class="cl-value">kalamdreamworld777@gmail.com</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.kalamdreamworld.com" target="_blank" rel="noopener">
+                <i class="bi bi-globe2" aria-hidden="true"></i>
+                <span><span class="cl-label">Website</span><span class="cl-value">www.kalamdreamworld.com</span></span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="cl-label mb-2">Follow us</p>
+          <div class="social">
+            <!-- TODO: replace "#" with the client's LinkedIn company page URL -->
+            <a href="#" aria-label="Kalam Dream World on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <!-- TODO: replace "#" with the client's Instagram profile URL -->
+            <a href="#" aria-label="Kalam Dream World on Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/919361199536" target="_blank" rel="noopener" aria-label="Chat with Kalam Dream World on WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <form id="contactForm" class="form-panel reveal" novalidate>
+            <h3>Send a message</h3>
+            <p class="mb-4">Fields marked * are required.</p>
+
+            <fieldset class="mb-4">
+              <legend class="form-label">I want to</legend>
+              <div class="role-group">
+                <input type="radio" class="btn-check" name="role" id="roleEmployer" value="employer" checked>
+                <label class="role-pill" for="roleEmployer"><i class="bi bi-building" aria-hidden="true"></i>Hire talent</label>
+                <input type="radio" class="btn-check" name="role" id="roleCandidate" value="candidate">
+                <label class="role-pill" for="roleCandidate"><i class="bi bi-person-badge" aria-hidden="true"></i>Find a job</label>
+                <input type="radio" class="btn-check" name="role" id="roleProject" value="project">
+                <label class="role-pill" for="roleProject"><i class="bi bi-laptop" aria-hidden="true"></i>Start an IT project</label>
+              </div>
+            </fieldset>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="cfName" class="form-label">Full name *</label>
+                <input type="text" id="cfName" class="form-control" autocomplete="name" placeholder="Your name">
+                <div class="invalid-feedback">Enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cfPhone" class="form-label">Phone or WhatsApp *</label>
+                <input type="tel" id="cfPhone" class="form-control" autocomplete="tel" placeholder="+91 98765 43210">
+                <div class="invalid-feedback">Enter a valid phone number with at least 10 digits.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cfEmail" class="form-label">Email</label>
+                <input type="email" id="cfEmail" class="form-control" autocomplete="email" placeholder="you@example.com">
+                <div class="invalid-feedback">Enter a valid email address, or leave this blank.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cfService" class="form-label">Service *</label>
+                <select id="cfService" class="form-select">
+                  <option value="">Choose a service</option>
+                  <optgroup label="Non-IT services">
+                    <option value="healthcare">Healthcare</option>
+                    <option value="banking">Banking</option>
+                    <option value="finance">Finance</option>
+                    <option value="insurance">Insurance</option>
+                  </optgroup>
+                  <optgroup label="IT services">
+                    <option value="sap">SAP</option>
+                    <option value="oracle">Oracle</option>
+                    <option value="temenos">Temenos banking</option>
+                    <option value="scm">Supply chain management</option>
+                    <option value="tibco">TIBCO</option>
+                    <option value="middleware">Middleware &amp; integration</option>
+                    <option value="enterprisedata">Enterprise data</option>
+                    <option value="bigdata">Big data &amp; analytics</option>
+                    <option value="cloud">Cloud</option>
+                    <option value="digitalapps">Digital apps</option>
+                    <option value="testing">Testing</option>
+                    <option value="managed">Managed services</option>
+                  </optgroup>
+                  <optgroup label="Workforce &amp; training">
+                    <option value="workforce">Workforce solutions</option>
+                    <option value="training">Training &amp; placement</option>
+                  </optgroup>
+                  <option value="other">Something else</option>
+                </select>
+                <div class="invalid-feedback">Choose the service you need.</div>
+              </div>
+              <div class="col-12">
+                <label for="cfMessage" class="form-label">Message</label>
+                <textarea id="cfMessage" class="form-control" rows="4" placeholder="Tell us about the role, project or job you're looking for"></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-marigold btn-lg" data-channel="whatsapp"><i class="bi bi-whatsapp" aria-hidden="true"></i>Send on WhatsApp</button>
+              <button type="submit" class="btn btn-line btn-lg" data-channel="email"><i class="bi bi-envelope" aria-hidden="true"></i>Send by email</button>
+            </div>
+            <p class="form-note">Both options open your message, ready to send, in WhatsApp or your email app.</p>
+
+            <div id="formStatus" class="form-status d-none" role="status" aria-live="polite">
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i><span></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-5 gx-lg-5">
+      <div class="col-lg-4">
+        <a class="brand" href="#home">
+          <svg class="brand-mark" aria-hidden="true"><use href="#kdw-mark"/></svg>
+          <span>Kalam Dream World</span>
+        </a>
+        <p class="mt-3 mb-4">Staffing, technology and training for businesses and job seekers.</p>
+        <div class="social">
+          <a href="#" aria-label="Kalam Dream World on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Kalam Dream World on Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="https://wa.me/919361199536" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          <a href="mailto:kalamdreamworld777@gmail.com" aria-label="Email Kalam Dream World"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#why">Why us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#non-it">Non-IT services</a></li>
+          <li><a href="#it-services">IT services</a></li>
+          <li><a href="#services" class="js-service" data-service="workforce">Workforce solutions</a></li>
+          <li><a href="#services" class="js-service" data-service="training">Training &amp; placement</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4>Contact</h4>
+        <ul class="footer-links footer-contact">
+          <li><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:+919361199536">+91 93611 99536</a></li>
+          <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:kalamdreamworld777@gmail.com">kalamdreamworld777@gmail.com</a></li>
+          <li><i class="bi bi-globe2" aria-hidden="true"></i><a href="https://www.kalamdreamworld.com" target="_blank" rel="noopener">www.kalamdreamworld.com</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
+  <div class="footer-bottom">
+    <div class="container">
+      &copy; <span id="year">2026</span> Kalam Dream World. All rights reserved.
+    </div>
+  </div>
+</footer>
 
- 
- 
+<!-- ================= SERVICE DETAILS MODAL ================= -->
+<div class="modal fade svc-modal" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="m-ico" aria-hidden="true"></div>
+        <div>
+          <span class="m-group"></span>
+          <h3 class="modal-title" id="serviceModalTitle">Service</h3>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="m-desc"></p>
+        <h4>What's included</h4>
+        <ul class="m-offers"></ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-marigold m-enquire">Enquire about this service</button>
+        <a class="btn btn-line m-whatsapp" href="https://wa.me/919361199536" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i>Ask on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Floating actions -->
+<a class="wa-float" href="https://wa.me/919361199536?text=Hello%20Kalam%20Dream%20World%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+<button class="to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
