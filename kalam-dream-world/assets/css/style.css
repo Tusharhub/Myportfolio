@@ -1819,13 +1819,16 @@ a:hover > .link-arrow i,
   scrollbar-width: none;
 }
 .subnav-inner::-webkit-scrollbar { display: none; }
-@media (max-width: 1199.98px) {
-  .subnav-inner {
-    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 20px, #000 calc(100% - 28px), transparent 100%);
-    mask-image: linear-gradient(90deg, transparent 0, #000 20px, #000 calc(100% - 28px), transparent 100%);
-    padding-left: 12px;
-    padding-right: 24px;
-  }
+.subnav-inner {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 28px), transparent 100%);
+  padding-left: 10px;
+  padding-right: 28px;
+}
+@media (min-width: 1200px) {
+  .subnav-inner { gap: .1rem; }
+  .subnav a { padding: .5rem .85rem; font-size: .93rem; }
+  .subnav a i { display: none; }
 }
 .subnav a {
   flex-shrink: 0;
@@ -2496,7 +2499,6 @@ a:hover > .link-arrow i,
 /* ---------- Responsive ---------- */
 @media (max-width: 1199.98px) {
   .bento-it { grid-column: span 12; grid-row: auto; }
-  .bento-side { grid-column: span 6; }
 }
 
 @media (max-width: 991.98px) {
@@ -2519,8 +2521,6 @@ a:hover > .link-arrow i,
   .channels { margin: 0; max-width: none; }
 
   .statement { margin-bottom: 2.5rem; }
-  .bento-train { flex-direction: column; align-items: stretch; }
-  .bento-train-text,
   .mini-journey { flex: none; }
   .bento-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -2540,7 +2540,6 @@ a:hover > .link-arrow i,
 @media (max-width: 767.98px) {
   .why-grid { grid-template-columns: 1fr; }
   .bento-groups { grid-template-columns: 1fr; }
-  .bento-side { grid-column: span 12; }
   .mini-journey { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .mini-journey li { font-size: .72rem; line-height: 1.2; }
   .mini-journey .mj-dot { width: 36px; height: 36px; font-size: .85rem; }
@@ -2640,5 +2639,311 @@ a:hover > .link-arrow i,
   .js .hero .c-line,
   .js .hero .path-line { stroke-dashoffset: 0; }
   .js .hero .layer { opacity: 1; transform: translateZ(calc(var(--i) * 10cqi)); }
+}
+
+/* =========================================================
+   06  Photos, main focus (AI & animation), contact additions
+   ========================================================= */
+
+:root {
+  --focus: #BE185D;
+  --focus-tint: #FCE7F3;
+  --focus-light: #F9A8D4;
+}
+.cat-focus { --cat: var(--focus); --cat-tint: var(--focus-tint); --cat-light: var(--focus-light); }
+
+/* Photo loading fallback: if a photo can't load, the tinted panel shows instead */
+.js-photo { background: var(--cat-tint, var(--paper)); }
+.photo-broken { visibility: hidden; }
+
+.focus-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .4rem .9rem;
+  border-radius: 999px;
+  background: var(--marigold);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: .88rem;
+}
+.focus-tag {
+  font-style: normal;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  padding: .15rem .5rem;
+  border-radius: 999px;
+  background: var(--marigold);
+  color: var(--ink);
+  margin-left: .35rem;
+  vertical-align: .12em;
+  white-space: nowrap;
+}
+
+/* ---------- Navigation: main-focus link in the mega menu ---------- */
+.mega-feature {
+  background: #FFF6FB;
+  border: 1px solid var(--focus-tint);
+}
+.mega-feature:hover,
+.mega-feature:focus-visible { background: var(--focus-tint); }
+
+/* ---------- Hero ---------- */
+.hc-sep {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .4);
+  margin: 0 .25rem;
+}
+
+/* Main-focus stars in the constellation */
+.c-node[data-cat="focus"] .c-halo,
+.c-node[data-cat="focus"] .c-dot { fill: var(--focus-light); }
+.c-focus .c-halo { opacity: .3; }
+.c-focus .c-dot { filter: drop-shadow(0 0 6px rgba(249, 168, 212, .9)); }
+.c-label-focus { fill: #fff; font-weight: 700; }
+.c-line-focus { stroke: rgba(249, 168, 212, .6); stroke-width: 1.8; }
+
+/* About: fifth orbit satellite */
+.orbit-sat.s5 { left: 27cqi; top: 1cqi; --sat-c: var(--focus-light); }
+
+/* IT: fifth layer of the stack */
+.layer[data-c="focus"] { --lc: 249, 168, 212; }
+.stack-labels li.is-focus { color: var(--focus-light); }
+.stack-beam {
+  top: calc(58cqi - 4 * 8.48cqi);
+  height: calc(4 * 8.48cqi);
+}
+
+/* Non-IT: five-point industry map */
+.ind-core { top: var(--y, 50%); }
+
+/* ---------- Home: services overview with photos ---------- */
+.bento-card { --pad: 2.2rem; padding: var(--pad); }
+.bento-photo {
+  margin: calc(-1 * var(--pad)) calc(-1 * var(--pad)) .5rem;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  background: var(--cat-tint, var(--paper));
+}
+.bento-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .7s var(--ease);
+}
+.bento-card:hover .bento-photo img { transform: scale(1.05); }
+.bento-card h3 { margin-top: .2rem; }
+
+.bento-feature {
+  grid-column: span 7;
+  grid-row: auto;
+  min-height: 560px;
+  padding: 0;
+  justify-content: flex-end;
+  background: var(--night);
+  border-color: transparent;
+  color: #fff;
+}
+.bento-feature:hover { color: #fff; }
+.bento-feature .bento-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .9s var(--ease);
+}
+.bento-feature:hover .bento-bg { transform: scale(1.04); }
+.bento-feature::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(15, 20, 64, .1) 0%, rgba(15, 20, 64, .55) 42%, rgba(15, 20, 64, .95) 100%);
+}
+.bento-feature.glow::after {
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(249, 168, 212, .18), transparent 45%);
+}
+.bento-feature-body {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  padding: 2.6rem;
+}
+.bento-feature h3 { color: #fff; font-size: clamp(1.8rem, 3vw, 2.4rem); margin: .2rem 0 0; }
+.bento-feature p { color: rgba(255, 255, 255, .85); }
+.bento-feature .link-arrow { color: var(--marigold); padding-top: .3rem; margin-top: 0; }
+
+.bento-side { grid-column: span 5; }
+.bento-half { grid-column: span 6; }
+.bento-train {
+  grid-column: span 12;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2.4rem;
+  background: #fff;
+  border-color: var(--line);
+}
+.bento-train .bento-photo {
+  flex: 0 0 42%;
+  margin: calc(-1 * var(--pad)) 0 calc(-1 * var(--pad)) calc(-1 * var(--pad));
+  aspect-ratio: auto;
+  min-height: 300px;
+}
+.bento-train-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  padding: .3rem 0;
+}
+.bento-train .mini-journey { flex: none; margin: .5rem 0 .3rem; }
+.bento-train .link-arrow { margin-top: auto; padding-top: .6rem; }
+
+/* ---------- IT services: photo cards ---------- */
+.svc-card { padding: 0; overflow: hidden; }
+.svc-photo {
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--cat-tint, var(--paper));
+}
+.svc-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .7s var(--ease);
+}
+.svc-card:hover .svc-photo img { transform: scale(1.05); }
+div[class="col-lg-6"] > .svc-card .svc-photo { aspect-ratio: 2 / 1; }
+.svc-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem 2rem 2rem;
+}
+.svc-body h3 { font-size: 1.45rem; font-weight: 700; margin: 0 0 .6rem; }
+.svc-body > p { margin-bottom: 1.3rem; }
+
+/* Main-focus cluster on a dark band */
+.it-focus .cluster-head p { color: rgba(255, 255, 255, .78); }
+.it-focus .cluster-head .tile { background: rgba(249, 168, 212, .16); color: var(--focus-light); }
+.it-focus .svc-card { border-color: transparent; }
+.it-focus .svc-card h3 { color: var(--ink); }
+.it-focus .svc-card p { color: var(--muted); }
+.focus-count {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  background: var(--marigold);
+  color: var(--ink);
+}
+
+/* ---------- Non-IT staffing: industry photos ---------- */
+.industry-photo {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  max-width: 460px;
+  margin: 0 auto;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  background: var(--cat-tint);
+  box-shadow: var(--shadow-soft);
+  container-type: inline-size;
+}
+.industry-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.industry-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(14, 19, 51, .05) 50%, rgba(14, 19, 51, .4) 100%);
+  pointer-events: none;
+}
+.industry-photo .iv-chip {
+  z-index: 1;
+  background: #fff;
+  border: 0;
+  box-shadow: 0 10px 24px -12px rgba(14, 19, 51, .55);
+}
+
+/* ---------- About: photo thumbnails in the services list ---------- */
+.index-thumb {
+  width: 96px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--cat-tint, var(--paper));
+}
+.index-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s var(--ease);
+}
+.index-item:hover .index-thumb img { transform: scale(1.08); }
+
+/* ---------- Footer contact notes ---------- */
+.footer-contact li > span { display: block; }
+.footer-contact small {
+  display: block;
+  font-size: .82rem;
+  color: rgba(255, 255, 255, .5);
+}
+
+/* ---------- Service pop-up: photo behind the header ---------- */
+.svc-modal[data-cat="focus"] { --cat: var(--focus); --cat-light: var(--focus-light); }
+.svc-modal .modal-header {
+  background:
+    linear-gradient(180deg, rgba(21, 27, 77, .55) 0%, rgba(21, 27, 77, .94) 100%),
+    var(--m-photo, none) center / cover no-repeat;
+  background-color: var(--night);
+  padding-top: 3rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1199.98px) {
+  .bento-feature { grid-column: span 12; min-height: 480px; }
+  .bento-side { grid-column: span 12; }
+  .bento-side .bento-photo { aspect-ratio: 16 / 6; }
+}
+@media (max-width: 991.98px) {
+  .bento-train { flex-direction: column; gap: .9rem; }
+  .bento-train .bento-photo {
+    flex: none;
+    margin: calc(-1 * var(--pad)) calc(-1 * var(--pad)) .5rem;
+    aspect-ratio: 16 / 7;
+    min-height: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .bento-half { grid-column: span 12; }
+  .bento-feature { min-height: 440px; }
+  .bento-side .bento-photo { aspect-ratio: 16 / 8; }
+}
+@media (max-width: 575.98px) {
+  .bento-card { --pad: 1.7rem; }
+  .bento-feature-body { padding: 1.8rem; }
+  .bento-train .bento-photo { aspect-ratio: 16 / 8; }
+  .svc-body { padding: 1.5rem 1.4rem 1.6rem; }
+  .index-item { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .index-item .index-thumb { width: 64px; height: 48px; border-radius: 10px; }
+  .index-item p { grid-column: 1 / -1; grid-row: 2; }
+  .index-item .index-go { grid-column: 3; grid-row: 1; width: 40px; height: 40px; }
+  .hc-sep { display: none; }
 }
 
